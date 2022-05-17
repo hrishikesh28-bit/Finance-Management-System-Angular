@@ -2,9 +2,6 @@
    <div>
      <div id="navbar">
        <ul id="links">
-       
-     
-       
          <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! {{usname}}</li>
          <li class="link"  [routerLink]="['/indexLink']">Home</li>
          <li class="link"  [routerLink]="['/products']">Show Products</li>
@@ -14,7 +11,6 @@
        <br style="clear: both" />
      </div>
 <div class="container">
-   <!-- <button type="submit" [disabled]="isdisabled" [routerLink]="['/products']" >Show Products</button> -->
     <div class="heading">
       
        <h2>DASHBOARD</h2>
@@ -46,7 +42,6 @@
     <div class="prod-head">
        <h3>PRODUCT PURCHASED</h3>
     </div>
-    
     <br>
        <div id="transhead">
        <p>RECENT TRANSACTIONS</p>
@@ -56,7 +51,7 @@
        <table border="2px">
            <thead>
                <tr style="background-color: rgb(28, 77, 77);color:white;">
-                   
+                   <!-- <td>PRODUCT ID</td> -->
                    <td>Product NAME</td>
                    <td>COST</td>
                    <td>AMOUNT PAID</td>
@@ -66,7 +61,6 @@
            </thead>
            <tbody>
                <tr *ngFor="let his of prodhis">
-                  
                   <td>{{his.prodname}}</td>
                   <td>{{his.price}}</td>
                   <td>{{his.amountpaid}}</td>

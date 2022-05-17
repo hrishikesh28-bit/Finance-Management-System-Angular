@@ -32,7 +32,6 @@ export class AdminloginComponent implements OnInit {
           console.log(data);
           console.log(this.n);
           if (this.n==1) {
-            alert("User-name is invalid/does not exist")
             this.message="User-name is invalid/does not exist"
           } if(this.n==3) {
             this.message="Wrong Password"

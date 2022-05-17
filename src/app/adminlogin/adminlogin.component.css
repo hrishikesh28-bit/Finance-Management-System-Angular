@@ -6,10 +6,7 @@
 }
  
 #body {
-  /* background-color: #f
-  
-  
-  9fafb; */
+  /* background-color: #f9fafb; */
   font-family: "Open Sans", sans-serif;
   align-items: center;
   justify-content: center;
@@ -56,8 +53,8 @@ button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: darkblue;
-  border: 2px solid darkblue;
+  background-color: #3498db;
+  border: 2px solid #3498db;
   border-radius: 4px;
   color: #fff;
   font-size: 16px;
@@ -101,7 +98,7 @@ p {
 .link {
   float: left;
   margin-right: 25px;
-  background-color: darkblue;
+  background-color: #3498db;
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;

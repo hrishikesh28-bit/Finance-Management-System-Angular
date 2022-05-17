@@ -53,7 +53,7 @@ table {
     .link {
       float: left;
       margin-right: 25px;
-      background-color: darkblue;
+      background-color: #3498db;
       color: #fff;
       padding: 5px 10px;
       cursor: pointer;

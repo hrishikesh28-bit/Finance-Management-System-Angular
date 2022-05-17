@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyapiService } from '../myapi.service';
-
+import { UserDetails } from '../user-details';
 
 @Component({
   selector: 'app-activate-user',
@@ -11,28 +11,19 @@ import { MyapiService } from '../myapi.service';
 export class ActivateUserComponent implements OnInit {
 
   regid:any;
-  
+  user:UserDetails;
   radioVal:any;
   user1:any;
-  cards:any
-  
+  cards:any;
  
   constructor(private router:Router, private adservice:MyapiService, private aroute:ActivatedRoute,) { 
-    //this.user=new Userdetails();
-    
+    //this.user=new Userdetails();  
   }
   
- 
   ngOnInit(): void {
- 
- 
     this.adservice.getAllCards().subscribe((data:any) =>{
       console.log(data);
-      this.cards=data;
-      
- 
-  
-      
+      this.cards=data; 
     }
     );
   }

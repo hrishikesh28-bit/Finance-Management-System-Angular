@@ -22,15 +22,15 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: darkblue;
-    border: 2px solid darkblue;
+    background-color: #3498db;
+    border: 2px solid hsl(204, 70%, 53%);
     border-radius: 4px;
     color: #fff;
     font-size: 16px;
     margin-top: 20px;
   }
   a {
-    color: darkblue;
+    color: #3498db;
   }
   p {
     margin: 5px;
@@ -61,7 +61,7 @@
   .link {
     float: left;
     margin-right: 25px;
-    background-color: darkblue;
+    background-color: #3498db;
     color: #fff;
     padding: 5px 10px;
     cursor: pointer;
@@ -117,6 +117,6 @@
     margin-top: 20px;
   }
   h4 {
-    color: darkblue;
+    color: rgb(76, 126, 160);
   }
   

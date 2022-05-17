@@ -3,8 +3,8 @@
       <div id="navbar">
         <ul id="links">
           <li class="link"  [routerLink]="['/adminlogin']">Admin Login </li>
-          <li class="link" >User Register</li>
-          <li class="link">User Login</li>
+          <li class="link" [routerLink]="['/registerLink']">User Register</li>
+          <li class="link" [routerLink]="['/loginLink']">User Login</li>
         </ul>
         <br style="clear: both" />
       </div>
@@ -14,9 +14,9 @@
           <img src="../../assets/images/oneplus_nord.jpg"  class="image" />
         </div>
         <div id="productInfo" >
-          <p>PRODUCT NAME:</p>
-          <p>PRODUCT DETAIL:</p>
-          <p>COST:</p>
+          <p>PRODUCT NAME:</p>{{prod.prodname}}
+          <p>PRODUCT DETAIL:</p>{{prod.proddesc}}
+          <p>COST:</p>{{prod.price}}
           <br><button [routerLink]="['/registerLink']" >BUY NOW</button>
         </div>
       </div>
@@ -31,11 +31,11 @@
             </tr>
           </thead>
           <tbody>
-            <!-- <tr *ngFor="let card of cards">
+            <tr *ngFor="let card of cards">
               <td>{{ card.cardtype | uppercase }}</td>
               <td>{{ card.validity }}</td>
               <td>{{ card.cardlimit }}</td>
-            </tr> -->
+            </tr>
           </tbody>
         </table>
       </div>

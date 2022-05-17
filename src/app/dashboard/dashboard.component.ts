@@ -34,13 +34,8 @@ export class DashboardComponent implements OnInit {
   this.regid=JSON.parse(sessionStorage.getItem("regid"));
         this.dashbardService.getHistoryById(this.regid).subscribe(
           (hist:any)=>{
-            
             console.log(hist);
             this.prodhis=hist;
-           //  this.rid=this.prodhis.regid;
-           //  console.log(this.rid);
-          
- 
           }
         )
  
@@ -48,9 +43,7 @@ export class DashboardComponent implements OnInit {
           (det:any)=>{
             console.log(det);
             this.userdet=det;
-
             this.usname=this.userdet.uname;
-          
           }
         )
         this.dashbardService.getCardDetailsById(this.regid).subscribe(

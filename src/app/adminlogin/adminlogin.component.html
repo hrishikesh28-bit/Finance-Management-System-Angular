@@ -15,19 +15,19 @@
 <div class="container" >
   <div>
 <label for="username"><b>Admin Name</b></label> 
-            <input  type="text" name="username"  placeholder="Enter AdminName" required ><br>       
+            <input  type="text" name="username" [(ngModel)]="name" placeholder="Enter AdminName" required ><br>       
           </div> 
         <div>
             <label for="userpass"><b>Password</b></label>   
-            <input  type="password" name="userpass"  placeholder="Enter Password" required> <br>     
+            <input  type="password" name="userpass" [(ngModel)]="password" placeholder="Enter Password" required> <br>     
           </div>
        
               <div style="display: flex">
-            <button type="submit" value="Login" (click)="checkAdmin()" > LOGIN</button>
+            <button type="submit" value="Login" (click)="checkAdmin()"> LOGIN</button>
 </div>
 </div>
             <div class="alert-danger">
-              <span><b></b> </span>
+              <span><b>{{message}}</b> </span>
             </div>
           </form>
           </section>

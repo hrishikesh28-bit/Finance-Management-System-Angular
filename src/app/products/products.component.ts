@@ -17,9 +17,7 @@ ProductName:any;
    this.usname=sessionStorage.getItem('userName');
     this.productService.getAllProducts().subscribe((data:any)=>
     {
-        console.log(data);
         this.prod=data as Product;
-        console.log(this.prod);
     })
   }
   loadproduct(prodid:any)
